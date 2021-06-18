@@ -1,1 +1,0 @@
-#This variables shell if else while mandatory in ALX School projects
