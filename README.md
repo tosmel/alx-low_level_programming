@@ -1,1 +1,1 @@
-#This variables shell if else while mandatory in ALX School projects
+#This low level programming is mandatory in all ALX School projects
