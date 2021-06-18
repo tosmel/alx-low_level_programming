@@ -1,1 +1,1 @@
-#This variables shell if else while mandatory in ALX School projects
+#This variables if else while
