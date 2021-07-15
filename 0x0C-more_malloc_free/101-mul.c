@@ -1,1 +1,1 @@
- intrin
+#hgsh intrin
