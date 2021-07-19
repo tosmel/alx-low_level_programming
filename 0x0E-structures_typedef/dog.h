@@ -2,17 +2,17 @@
 #define DOGH
 
 /**
- *  * struct dog - a dog
- *   *
- *    * @name: dog's name
- *     * @age: dog's age
- *      * @owner: dog's owner
- *       */
+ * struct dog - a dog
+ *
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ */
 typedef struct dog
 {
-		char *name;
-			float age;
-				char *owner;
+	char *name;
+	float age;
+	char *owner;
 } dog;
 
 typedef dog dog_t;
