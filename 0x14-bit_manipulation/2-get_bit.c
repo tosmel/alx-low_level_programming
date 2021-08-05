@@ -1,19 +1,23 @@
+#include "main.h"
+
 /**
- * get_bit - gets the value of a bit at index,
- * starting from least bit at 0
- *
- * @n: number to get bit from
- * @index: index of bit
- *
- * Return: value of bit, or -1 if error
+ * get_bit - get bit at index
+ * @n: number
+ * @index: index within binary number
+ * Return: bit 0 or 1, or -1 if error
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int m;
+	int bit;
+	unsigned int max_bits;
 
-	if (index > 63)
+	/* validate index is not out of range */
+	max_bits = (sizeof(unsigned long int) * 8);
+	if (index > max_bits)
 		return (-1);
 
-	m = 1 << index;
-	return ((n & m) > 0);
+	/* shift number index places right to find bit */
+	bit = ((n >> index) & 1);
+
+	return (bit);
 }
